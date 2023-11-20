@@ -5,8 +5,11 @@ public class HRManager extends Employee {
     private JuniorDeveloper[] juniorDevelopers;
     private MidDeveloper[] midDevelopers;
     private SeniorDeveloper[] seniorDevelopers;
-    public HRManager(long id, String name) {
+    public HRManager(long id, String name, JuniorDeveloper[] junior,MidDeveloper[] mid,SeniorDeveloper[] senior) {
         super(id, name);
+        this.juniorDevelopers=junior;
+        this.midDevelopers=mid;
+        this.seniorDevelopers=senior;
     }
 
     @Override
