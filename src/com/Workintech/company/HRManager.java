@@ -1,5 +1,7 @@
 package com.Workintech.company;
 
+import java.util.Arrays;
+
 public class HRManager extends Employee {
 
     private JuniorDeveloper[] juniorDevelopers;
@@ -61,6 +63,8 @@ public class HRManager extends Employee {
 
     }
 
+
+
     public void addEmployee(int index, SeniorDeveloper senior){
         try{
             if(seniorDevelopers[index] == null){
@@ -74,5 +78,13 @@ public class HRManager extends Employee {
 
         }
 
+    }
+    @Override
+    public String toString() {
+        return "HRManager{" +
+                "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
+                ", midDevelopers=" + Arrays.toString(midDevelopers) +
+                ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
+                '}';
     }
 }
